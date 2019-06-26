@@ -37,10 +37,7 @@
       }
     ],
     "chaincodes": [
-      {"id": "drm", "path": "contract/fabric/drm", "language":"golang", "version": "v0", "channel": "channelone"},
-      {"id": "marbles", "path": "contract/fabric/marbles/go", "language":"golang", "version": "v1", "channel": "channelone", "metadataPath": "src/contract/fabric/marbles/go/metadata"},
-      {"id": "simple", "path": "contract/fabric/simple/go", "language":"golang", "version": "v0", "channel": "channelone"},
-      {"id": "smallbank", "path": "contract/fabric/smallbank", "language":"golang", "version": "v0", "channel": "channelone"}
+      {"id": "simple", "path": "contract/fabric/simple/go", "language":"golang", "version": "v0", "channel": "channelone"}
     ],
     "endorsement-policy": {
       "identities": [
