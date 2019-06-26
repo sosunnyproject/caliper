@@ -1,10 +1,6 @@
 {
   "caliper": {
-    "blockchain": "fabric",
-    "command": {
-      "start": "",
-      "end" : ""
-    }
+    "blockchain": "fabric"
   },
   "fabric": {
     "cryptodir": "/data/posledger-network/crypto-config",
