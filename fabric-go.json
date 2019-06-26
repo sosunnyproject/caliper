@@ -1,21 +1,25 @@
 {
   "caliper": {
-    "blockchain": "fabric"
+    "blockchain": "fabric",
+    "command": {
+      "start": "",
+      "end" : ""
+    }
   },
   "fabric": {
-    "cryptodir": "network/fabric-v1.4/config/crypto-config",
+    "cryptodir": "/data/posledger-network/crypto-config",
     "network": {
       "orderer": {
         "url": "grpc://192.168.193.237:7050",
         "mspid": "OrdererMSP",
-        "msp": "network/fabric-v1.4/config/crypto-config/ordererOrganizations/posledger.com/msp/",
+        "msp": "/data/posledger-network/crypto-config/ordererOrganizations/posledger.com/msp/",
         "server-hostname": "orderer0.posledger.com",
-        "tls_cacerts": "network/fabric-v1.4/config/crypto-config/ordererOrganizations/posledger.com/orderers/orderer0.posledger.com/tls/ca.crt"
+        "tls_cacerts": "/data/posledger-network/crypto-config/ordererOrganizations/posledger.com/orderers/orderer0.posledger.com/tls/ca.crt"
       },
       "org1": {
-        "name": "peerOrg1",
+        "name": "Org1MSP",
         "mspid": "Org1MSP",
-        "msp": "network/fabric-v1.4/config/crypto-config/peerOrganizations/org1.posledger.com/msp/",
+        "msp": "/data/posledger-network/crypto-config/peerOrganizations/org1.posledger.com/msp/",
         "ca": {
           "url": "http://192.168.193.237:7054",
           "name": "ca.posledger.com"
@@ -24,7 +28,7 @@
           "requests": "grpc://192.168.193.237:7051",
           "events": "grpc://192.168.193.237:7053",
           "server-hostname": "peer0.org1.posledger.com",
-          "tls_cacerts": "network/fabric-v1.4/config/crypto-config/peerOrganizations/org1.posledger.com/peers/peer0.org1.posledger.com/tls/ca.crt"
+          "tls_cacerts": "/data/posledger-network/crypto-config/peerOrganizations/org1.posledger.com/peers/peer0.org1.posledger.com/tls/ca.crt"
         }
      }
     },
@@ -32,7 +36,7 @@
       {
         "name": "channelone",
         "deployed": true,
-        "config": "network/fabric-v1.4/config/channelone.tx",
+        "config": "/data/posledger-network/channel-artifacts/channelone.tx",
         "organizations": ["org1"]
       }
     ],
